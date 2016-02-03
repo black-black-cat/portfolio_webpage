@@ -1,0 +1,28 @@
+{
+  "name": "portfolio_webpage",
+  "version": "1.0.0",
+  "description": "我的个人主页",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "browser-sync start --port 9999 --server --files \"**/*.css, **/*.html, **/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/black-black-cat/portfolio_webpage.git"
+  },
+  "keywords": [
+    "spa",
+    "webapp"
+  ],
+  "author": "Jeff Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/black-black-cat/portfolio_webpage/issues"
+  },
+  "homepage": "https://github.com/black-black-cat/portfolio_webpage#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0"
+  }
+}
