@@ -25,12 +25,17 @@
         <nav class="navbar navbar-default navbar-fixed-top pw-nav" id="nav">
             <div class="container">
                 <div class="navbar-header">
-
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="#">black-black-cat</a>
                 </div>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1" aria-expanded="false" >
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">主页</a></li>
+                        <li><a href="#">主页</a></li>
                         <li><a href="#about">关于我</a></li>
                         <li><a href="#project">项目</a></li>
                         <li><a href="#contact">联系方式</a></li>
@@ -39,62 +44,159 @@
             </div>
         </nav>
         <div class="intro-wrap" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-content">
-                            <h1>一腔热血的激情 · 一夜失眠的创意 · 一个像素的执着</h1>
-                            <h3>我是一名兴趣使然的网站前端开发者</h3>
-                            <hr>
-                            <ul class="list-inline">
-                                <li>
-                                    <a class="btn btn-default btn-lg btn-sns" href="https://github.com/black-black-cat">
-                                        <i class="fa fa-github fa-fw"></i>
-                                        <span>Github</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn btn-default btn-lg btn-sns" href="https://plus.google.com/u/0/117734291158579922974">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                        <span>Google +</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn btn-default btn-lg btn-sns" href="http://www.piedpiper.com">
-                                        <i class="fa fa-pied-piper fa-fw"></i>
-                                        <span>Pied Piper</span>
-                                    </a>
-                                </li>
+            <div class="intro-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="intro-content">
+                                <h1>
+                                    <span>一腔热血的激情</span>
+                                    <span class="intro-content-divider"> · </span>
+                                    <span>一夜失眠的创意</span>
+                                    <span class="intro-content-divider"> · </span>
+                                    <span>一个像素的执着</span>
+                                </h1>
+                                <h3>我是一名兴趣使然的网站前端开发者</h3>
+                                <hr class="intro-divider">
+                                <ul class="list-inline btn-sns-list">
+                                    <li>
+                                        <a class="btn btn-default btn-lg btn-sns" href="https://github.com/black-black-cat">
+                                            <i class="fa fa-github fa-fw"></i>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-default btn-lg btn-sns" href="https://plus.google.com/u/0/117734291158579922974">
+                                            <i class="fa fa-google-plus fa-fw"></i>
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-default btn-lg btn-sns" href="http://www.piedpiper.com">
+                                            <i class="fa fa-pied-piper fa-fw"></i>
+                                            <span>Pied Piper</span>
+                                        </a>
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <div class="about-wrap" id="about">
+            <div class="about-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-6">
+                            <h2>关于我</h2>
+                            <p>
+                                北冥有鱼，其名为鲲。鲲之大，不知其几千里也。化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。
+                            </p>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about-wrap" id="about">
-
-        </div>
         <div class="project-wrap" id="project">
+            <div class="project-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="project-title">最近开发的项目</h2>
 
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 project-item">
+                            <a href="http://codepen.io/ThiagoFerreir4/full/gpvJOK" target="_blank" class="project-link" data-toggle="modal">
+                                <div class="project-hover">
+                                    <div class="project-hover-content">
+                                        <i class="fa fa-fire fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="https://36.media.tumblr.com/a4a06b925ad2ad936ba2ce6c3343c444/tumblr_nwh4epTtMV1ud7rr3o1_1280.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="project-caption">
+                                <h4>Twitch.tv API project</h4>
+                                <p class="text-muted">Bootstrap and Angularjs</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 project-item">
+                            <a href="http://codepen.io/ThiagoFerreir4/full/gpvJOK" target="_blank" class="project-link" data-toggle="modal">
+                                <div class="project-hover">
+                                    <div class="project-hover-content">
+                                        <i class="fa fa-fire fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="https://36.media.tumblr.com/a4a06b925ad2ad936ba2ce6c3343c444/tumblr_nwh4epTtMV1ud7rr3o1_1280.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="project-caption">
+                                <h4>Twitch.tv API project</h4>
+                                <p class="text-muted">Bootstrap and Angularjs</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 project-item">
+                            <a href="http://codepen.io/ThiagoFerreir4/full/gpvJOK" target="_blank" class="project-link" data-toggle="modal">
+                                <div class="project-hover">
+                                    <div class="project-hover-content">
+                                        <i class="fa fa-fire fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="https://36.media.tumblr.com/a4a06b925ad2ad936ba2ce6c3343c444/tumblr_nwh4epTtMV1ud7rr3o1_1280.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="project-caption">
+                                <h4>Twitch.tv API project</h4>
+                                <p id="small-text" class="text-muted">Bootstrap and Angularjs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contact-wrap" id="contact">
-
+            <div class="contact-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="connect">
+                                联系信箱：a613463@live.com
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
+                        <ul class="list-inline">
+                            <li><a href="#">主页</a></li>
+                            <li class="footer-menu-divider"> | </li>
+                            <li><a href="#about">关于我</a></li>
+                            <li class="footer-menu-divider"> | </li>
+                            <li><a href="#project">项目</a></li>
+                            <li class="footer-menu-divider"> | </li>
+                            <li><a href="#contact">联系方式</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
+        </script>
         <script src="js/plugins.js"></script>
-        <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

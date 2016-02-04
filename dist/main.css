@@ -94,22 +94,156 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.intro-wrap {
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
-
+#nav li a, #nav .navbar-brand {
+    color: #000;
+}
+#nav li a:hover, #nav .navbar-brand:hover {
+    background: #fff;
+}
+.pw-nav {
+    font-size: 16px;
+    border-bottom: 1px outset rgba(192, 192, 192, 0.5);
+    background: rgba(210, 210, 210, 0.9);
+}
+.intro-wrap {
+    min-height: 800px;
+    padding-top: 51px;
+    text-align: center;
+    background: url("../img/bg-intro.jpg") no-repeat fixed;
+    background-size: cover;
+}
+.intro-overlay {
+    min-height: 800px;
+    background: rgba(200, 200, 200, .4);
+}
+.intro-content {
+    padding-top: 15%;
+    padding-bottom: 20%;
+}
+.intro-content > h1 {
+    text-shadow: 2px 1px 2px #fff;
+    color: #333;
+}
+.intro-content > h3 {
+    color: #111;
+}
+.intro-divider {
+    border: 1px outset rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    width: 100%;
+}
 .btn-sns:hover {
     color: #fff;
-    border: 2px outset rgba(0, 0, 0, 0.9);
+    border: 1px outset rgba(0, 0, 0, 0.9);
     background: rgba(0, 0, 0, 0.9);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.2s;
+    /*transform: scale(1.1);*/
+    transition: 200ms;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
+
+}
+.about-wrap {
+    min-height: 800px;
+    background: url(../img/bg2.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
+.about-overlay {
+    min-height: 800px;
+    padding-top: 80px;
+    background: rgba(255, 255, 255, .3);
+}
+/* ============================== #project 的样式 =============================== */
+.project-wrap {
+    min-height: 800px;
+    background: url(../img/bg-project.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.project-overlay {
+    padding-top: 80px;
+}
+.project-item {
+    right: 0;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin: 0 0 30px;
+}
+.project-item:hover {
+    transition: 0.5s;
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+.project-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.project-link .project-hover {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+.project-link .project-hover:hover {
+    opacity: 1;
+}
+.project-link .project-hover .project-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff;
+}
+.project-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+    padding: 25px;
+}
+.project-caption h4 {
+    color: #fff;
+    text-transform: none;
+    margin: 0;
+}
+.project-caption p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+}
+/* ============================== 结束 #project 的样式 =============================== */
+.contact-wrap {
+    min-height: 500px;
+    background: url(../img/bg-contact.jpg) no-repeat fixed;
+    background-size: cover;
+}
+.contact-overlay {
+    min-height: 500px;
+    padding-top: 80px;
+    background: rgba(255, 255, 255, .3);
+}
+/* 媒体查询 */
+@media (max-width:767px) {
+    .btn-sns-list > li {
+        display: block;
+        padding: 0;
+        margin-bottom: 20px
+    }
+}
+footer {
+    padding: 50px 0;
+    background: rgba(192, 192, 192, 0.9);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
