@@ -159,6 +159,15 @@ textarea {
     padding-top: 80px;
     background: rgba(255, 255, 255, .3);
 }
+.about-pic-wrap {
+    overflow: hidden;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background: url(http://ia.media-imdb.com/images/M/MV5BMjQyODg5Njc4N15BMl5BanBnXkFtZTgwMzExMjE3NzE@._V1_SX640_SY720_.jpg) no-repeat center center;
+    background-size: 112%;
+}
+
 /* ============================== #project 的样式 =============================== */
 .project-wrap {
     min-height: 800px;
