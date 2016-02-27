@@ -97,16 +97,11 @@ textarea {
 * {
     box-sizing: border-box;
 }
-#nav li a, #nav .navbar-brand {
-    color: #000;
-}
-#nav li a:hover, #nav .navbar-brand:hover {
-    background: #fff;
-}
+
 .pw-nav {
     font-size: 16px;
     border-bottom: 1px outset rgba(192, 192, 192, 0.5);
-    background: rgba(210, 210, 210, 0.9);
+    /*background: rgba(210, 210, 210, 0.9);*/
 }
 .intro-wrap {
     min-height: 800px;
