@@ -107,8 +107,7 @@ textarea {
     min-height: 800px;
     padding-top: 51px;
     text-align: center;
-    background: url(../img/bg-intro.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: url(../../img/src/bg-intro.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 .intro-overlay {
@@ -131,21 +130,24 @@ textarea {
     box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
     width: 100%;
 }
+.btn-sns {
+    transition: all 200ms ease-in-out;
+}
 .btn-sns:hover {
     color: #fff;
     border: 1px outset rgba(0, 0, 0, 0.9);
     background: rgba(0, 0, 0, 0.9);
-    /*transform: scale(1.1);*/
-    transition: 200ms;
+    transform: scale(1.1);
+
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    /*letter-spacing: 2px;*/
+    letter-spacing: 2px;
 
 }
 .about-wrap {
     min-height: 800px;
     color: rgba(0, 0, 0, 0.9);
-    background: url(../img/bg2.jpg) no-repeat center center fixed;
+    background: url(../../img/src/bg2.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -166,7 +168,7 @@ textarea {
 /* ============================== #project 的样式 =============================== */
 .project-wrap {
     min-height: 800px;
-    background: url(../img/bg-project.jpg) no-repeat center center fixed;
+    background: url(../../img/src/bg-project.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 .project-overlay {
@@ -194,8 +196,6 @@ textarea {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 .project-link .project-hover:hover {
@@ -232,7 +232,7 @@ textarea {
 /* ============================== 结束 #project 的样式 =============================== */
 .contact-wrap {
     min-height: 500px;
-    background: url(../img/bg-contact.jpg) no-repeat center center fixed;
+    background: url(../../img/src/bg-contact.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 .contact-overlay {
