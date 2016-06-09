@@ -48,6 +48,7 @@ Temporary Items
 
 # custom
 node_modules
+bower_components
+.idea
 *.log
-*.idea
 *.swp
